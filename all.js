@@ -12,6 +12,8 @@ npm install openlayers --save
 npm install leaflet --save
 npm install --save glyphicons
 npm install font-awesome --save
+npm list grunt // zeigt lokale Version von grunt
+
 
 // lokaler Server (Node Standard) // https://www.npmjs.com/package/http-server
 npm install http-server -g // installiert http-server global
@@ -64,7 +66,7 @@ git commit -m "commit comment"
 git mergetool // bei Konfliketen mergetool aufrufen
 git reset --merge // bricht merge ab
 git add filename.txt //nachdem merge bereinigt ist
-git commit -m "" //nachdem merge bereinigt ist
+git commit -m "merged" //nachdem merge bereinigt ist
 
 git config // git Konfiguration
 
@@ -74,11 +76,39 @@ git remote set-url origin https://github.com/mcodebox/proj1.git // git online re
 git push -u origin master // pusht repo auf GitHub
 git pull https://github.com/mcodebox/proj1.git master // pullt den master branch von github
 git push -f origin master // force push auf GitHub
+git push origin master // erster push (wenn remote repo noch leer)
 
 git fetch <remote> // download all changes from remote without intergrating into HEAD
 git pull <remote> <branch> // download all changes from remote and directly merge into HEAD
 
 git branch -d branch_name // delete local branch
+
+#############################################################
+## Grunt
+npm install grunt -g // installiert Grunt global
+npm install grunt --save-dev // installiert Grunt ins Verzeichnis
+npm install grunt-contrib-watch --save-dev // watcher wird installiert
+grunt --version // zeigt grunt version
+
+npm install --save-dev grunt-sass // installiert grunt-sass
+
+// automatisch Gruntfile erzeugen mit grunt-init
+npm install -g grunt-init // installiert grunt-init global
+git clone https://github.com/gruntjs/grunt-init-gruntfile.git C:\Users\BENUTZER\.grunt-init\gruntfile // klont init-template (Windows)
+git clone https://github.com/gruntjs/grunt-init-gruntfile.git ~/.grunt-init/gruntfile // klont init-template (Linux)
+grunt-init gruntfile // erstellt gruntfile
+
+
+grunt // führt gruntfile.js aus (development)
+grunt jshint// führt jshint
+grunt deployment // führt deployment im Gruntfile aus
+
+
+npm install grunt-contrib-jshint --save-dev //installiert package
+
+#############################################################
+## Yeoman
+npm install --global yo // installiert Yeoman
 
 #############################################################
 ## JavaScript
