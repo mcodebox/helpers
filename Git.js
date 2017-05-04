@@ -15,6 +15,7 @@ git commit -a -m "Initial project files + HTML Markup" // -a committed alle Date
 git log // zeigt alle commits
 git checkout 4ea35 // bringt einen zu einem bestimmten Commit zurück (ertse 5 Zeichen reichen)
 git checkout master // zum production branch
+git commit // Vim mit esc + :wq + Enter beenden
 
 //Branching
 git branch feature_x // erstellt neuen branch feature_x
